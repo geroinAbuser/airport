@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\prog\\airport\\api-airport\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6AE5D61F-5AA7-45BB-9629-F524322FEF97}|api-airport\\api-airport.csproj|f:\\prog\\airport\\api-airport\\api-airport\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6AE5D61F-5AA7-45BB-9629-F524322FEF97}|api-airport\\api-airport.csproj|solutionrelative:api-airport\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AE5D61F-5AA7-45BB-9629-F524322FEF97}|api-airport\\api-airport.csproj|f:\\prog\\airport\\api-airport\\api-airport\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6AE5D61F-5AA7-45BB-9629-F524322FEF97}|api-airport\\api-airport.csproj|solutionrelative:api-airport\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AE5D61F-5AA7-45BB-9629-F524322FEF97}|api-airport\\api-airport.csproj|f:\\prog\\airport\\api-airport\\api-airport\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AE5D61F-5AA7-45BB-9629-F524322FEF97}|api-airport\\api-airport.csproj|solutionrelative:api-airport\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AE5D61F-5AA7-45BB-9629-F524322FEF97}|api-airport\\api-airport.csproj|f:\\prog\\airport\\api-airport\\api-airport\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6AE5D61F-5AA7-45BB-9629-F524322FEF97}|api-airport\\api-airport.csproj|solutionrelative:api-airport\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AE5D61F-5AA7-45BB-9629-F524322FEF97}|api-airport\\api-airport.csproj|f:\\prog\\airport\\api-airport\\api-airport\\dtos\\airport\\createairportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AE5D61F-5AA7-45BB-9629-F524322FEF97}|api-airport\\api-airport.csproj|solutionrelative:api-airport\\dtos\\airport\\createairportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "F:\\prog\\airport\\api-airport\\api-airport\\Dockerfile",
+              "RelativeDocumentMoniker": "api-airport\\Dockerfile",
+              "ToolTip": "F:\\prog\\airport\\api-airport\\api-airport\\Dockerfile",
+              "RelativeToolTip": "api-airport\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-22T17:07:22.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateAirportDto.cs",
+              "DocumentMoniker": "F:\\prog\\airport\\api-airport\\api-airport\\DTOs\\Airport\\CreateAirportDto.cs",
+              "RelativeDocumentMoniker": "api-airport\\DTOs\\Airport\\CreateAirportDto.cs",
+              "ToolTip": "F:\\prog\\airport\\api-airport\\api-airport\\DTOs\\Airport\\CreateAirportDto.cs",
+              "RelativeToolTip": "api-airport\\DTOs\\Airport\\CreateAirportDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:02:52.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "F:\\prog\\airport\\api-airport\\api-airport\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "api-airport\\appsettings.Development.json",
+              "ToolTip": "F:\\prog\\airport\\api-airport\\api-airport\\appsettings.Development.json",
+              "RelativeToolTip": "api-airport\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-19T09:35:23.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\prog\\airport\\api-airport\\api-airport\\appsettings.json",
+              "RelativeDocumentMoniker": "api-airport\\appsettings.json",
+              "ToolTip": "F:\\prog\\airport\\api-airport\\api-airport\\appsettings.json",
+              "RelativeToolTip": "api-airport\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-18T16:53:06.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\prog\\airport\\api-airport\\api-airport\\Program.cs",
+              "RelativeDocumentMoniker": "api-airport\\Program.cs",
+              "ToolTip": "F:\\prog\\airport\\api-airport\\api-airport\\Program.cs",
+              "RelativeToolTip": "api-airport\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T14:30:16.389Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

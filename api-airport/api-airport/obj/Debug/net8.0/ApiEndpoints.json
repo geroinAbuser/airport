@@ -1,0 +1,438 @@
+[
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Airplane.AirplaneDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Airplane.CreateAirplaneDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetList",
+    "RelativePath": "api/Airplane",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[api_airport.DTOs.Airplane.AirplaneDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Airplane.AirplaneDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Airplane.CreateAirplaneDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "AddItem",
+    "RelativePath": "api/Airplane",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newItem",
+        "Type": "api_airport.DTOs.Airplane.CreateAirplaneDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Airplane.AirplaneDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Airplane.CreateAirplaneDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetItem",
+    "RelativePath": "api/Airplane/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "api_airport.DTOs.Airplane.AirplaneDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Airplane.AirplaneDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Airplane.CreateAirplaneDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "UpdateItem",
+    "RelativePath": "api/Airplane/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedItem",
+        "Type": "api_airport.DTOs.Airplane.CreateAirplaneDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Airplane.AirplaneDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Airplane.CreateAirplaneDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteItem",
+    "RelativePath": "api/Airplane/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Airport.AirportDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Airport.CreateAirportDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetList",
+    "RelativePath": "api/Airport",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[api_airport.DTOs.Airport.AirportDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Airport.AirportDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Airport.CreateAirportDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "AddItem",
+    "RelativePath": "api/Airport",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newItem",
+        "Type": "api_airport.DTOs.Airport.CreateAirportDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Airport.AirportDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Airport.CreateAirportDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetItem",
+    "RelativePath": "api/Airport/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "api_airport.DTOs.Airport.AirportDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Airport.AirportDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Airport.CreateAirportDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "UpdateItem",
+    "RelativePath": "api/Airport/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedItem",
+        "Type": "api_airport.DTOs.Airport.CreateAirportDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Airport.AirportDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Airport.CreateAirportDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteItem",
+    "RelativePath": "api/Airport/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_airport.Controllers.FlightController",
+    "Method": "AddItem",
+    "RelativePath": "api/Flight",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newItem",
+        "Type": "api_airport.DTOs.Flight.CreateFlightDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Flight.FlightDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Flight.CreateFlightDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetList",
+    "RelativePath": "api/Flight",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[api_airport.DTOs.Flight.FlightDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Flight.FlightDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Flight.CreateFlightDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetItem",
+    "RelativePath": "api/Flight/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "api_airport.DTOs.Flight.FlightDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Flight.FlightDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Flight.CreateFlightDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "UpdateItem",
+    "RelativePath": "api/Flight/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedItem",
+        "Type": "api_airport.DTOs.Flight.CreateFlightDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Flight.FlightDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Flight.CreateFlightDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteItem",
+    "RelativePath": "api/Flight/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Reservation.ReservationDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Reservation.CreateReservationDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetList",
+    "RelativePath": "api/Reservation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[api_airport.DTOs.Reservation.ReservationDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Reservation.ReservationDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Reservation.CreateReservationDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "AddItem",
+    "RelativePath": "api/Reservation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newItem",
+        "Type": "api_airport.DTOs.Reservation.CreateReservationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "api_airport.Controllers.ReservationController",
+    "Method": "UpdateItem",
+    "RelativePath": "api/Reservation/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedItem",
+        "Type": "api_airport.DTOs.Reservation.CreateReservationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_airport.Controllers.ReservationController",
+    "Method": "DeleteItem",
+    "RelativePath": "api/Reservation/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_airport.Controllers.BaseController\u00602[[api_airport.DTOs.Reservation.ReservationDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[api_airport.DTOs.Reservation.CreateReservationDto, api-airport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetItem",
+    "RelativePath": "api/Reservation/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "api_airport.DTOs.Reservation.ReservationDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
