@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Vukpn5k5J6OT+tVp81OHTlGrJV2/iiJOboOHkkpr3GU=",
+  "Source": "api-identity",
+  "BasePath": "_content/api-identity",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -11,24 +11,25 @@ public class ReservationService : BaseService<Reservation, ReservationDto, Creat
     private readonly IReservationRepository _reservationRepository;
     private readonly IFlightRepository _flightRepository;
     private readonly IMapper<Reservation, ReservationDto, CreateReservationDto> _reservationMapper;
-    private readonly IUserService _userService;
+    private readonly IHttpContextAccessor _httpContextAccessor;
 
     public ReservationService(
         IReservationRepository reservationRepository, 
         IFlightRepository flightRepository,
-        IMapper<Reservation, ReservationDto, CreateReservationDto> reservationMapper, 
-        IUserService userService)
+        IMapper<Reservation, ReservationDto, CreateReservationDto> reservationMapper,
+        IHttpContextAccessor httpContextAccessor
+        )
         : base(reservationRepository, reservationMapper)
     {
         _reservationRepository = reservationRepository;
         _flightRepository = flightRepository;
         _reservationMapper = reservationMapper;
-        _userService = userService;
+        _httpContextAccessor = httpContextAccessor;
     }
 
     public override async Task<List<ReservationDto>> GetListAsync()
     {
-        var userId = _userService.UserId;
+        var userId = _httpContextAccessor.HttpContext?.User?.FindFirst("userId")?.Value;
         var role = _userService.Role;
 
         if (role == "Admin")

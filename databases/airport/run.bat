@@ -6,14 +6,19 @@ set DATABASE=Airport
 
 set SCRIPTS_DIR=%~dp0
 
+echo deleting database
+sqlcmd -S %SERVER% -E -i "%SCRIPTS_DIR%\delete_database.sql"
+
 echo creating database
 sqlcmd -S %SERVER% -E -i "%SCRIPTS_DIR%\create_database.sql"
 
 echo creating scheme
-sqlcmd -S %SERVER% -E -d %DATABASE% -i "%SCRIPTS_DIR%\create_schema.sql"
+sqlcmd -S %SERVER% -E -d %DATABASE% -i "%SCRIPTS_DIR%\create_main_schema.sql"
+sqlcmd -S %SERVER% -E -d %DATABASE% -i "%SCRIPTS_DIR%\create_client_schema.sql"
 
 echo creating tables
 
+sqlcmd -S %SERVER% -E -d %DATABASE% -i "%SCRIPTS_DIR%\create_users.sql"
 sqlcmd -S %SERVER% -E -d %DATABASE% -i "%SCRIPTS_DIR%\create_airports.sql"
 sqlcmd -S %SERVER% -E -d %DATABASE% -i "%SCRIPTS_DIR%\create_airplanes.sql"
 sqlcmd -S %SERVER% -E -d %DATABASE% -i "%SCRIPTS_DIR%\create_flights.sql"

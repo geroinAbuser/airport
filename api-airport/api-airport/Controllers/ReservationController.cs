@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using api_airport.DTOs.Reservation;
 using api_airport.Services.Interfaces;
-using api_airport.Emums;
-using api_airport.Filters;
+using Microsoft.AspNetCore.Authorization;
 
 namespace api_airport.Controllers;
 
+[Authorize]
 [Route("api/[controller]")]
 public class ReservationController : BaseController<ReservationDto, CreateReservationDto>
 {
@@ -16,7 +16,6 @@ public class ReservationController : BaseController<ReservationDto, CreateReserv
     }
 
     [HttpPut("{id}")]
-    [RoleRequirement(UserRole.User)]
     public override async Task<ActionResult> UpdateItem(Guid id, CreateReservationDto updatedItem)
     {
         await _reservationService.UpdateAsync(id, updatedItem);
@@ -24,7 +23,6 @@ public class ReservationController : BaseController<ReservationDto, CreateReserv
     }
 
     [HttpDelete("{id}")]
-    [RoleRequirement(UserRole.User)]
     public override async Task<ActionResult> DeleteItem(Guid id)
     {
         await _reservationService.DeleteAsync(id);

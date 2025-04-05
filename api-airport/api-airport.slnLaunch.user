@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "api-airport\\api-airport.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "api-identity\\api-identity.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

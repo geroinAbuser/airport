@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("api-airport")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+890e1eb90c6ccfff9f1f56b1a1311a640bf2f43f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+299b78d38a6d5d7f92fa99562dbb1b3a4f62efec")]
 [assembly: System.Reflection.AssemblyProductAttribute("api-airport")]
 [assembly: System.Reflection.AssemblyTitleAttribute("api-airport")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

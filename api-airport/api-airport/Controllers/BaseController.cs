@@ -1,6 +1,4 @@
-﻿using api_airport.Emums;
-using api_airport.Filters;
-using api_airport.Services.Interfaces;
+﻿using api_airport.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api_airport.Controllers;
@@ -37,7 +35,6 @@ public abstract class BaseController<TDto, TCreateDto> : ControllerBase
     }
 
     [HttpPut("{id}")]
-    [RoleRequirement(UserRole.Admin)]
     public virtual async Task<ActionResult> UpdateItem(Guid id, TCreateDto updatedItem)
     {
         await _service.UpdateAsync(id, updatedItem);
@@ -45,7 +42,6 @@ public abstract class BaseController<TDto, TCreateDto> : ControllerBase
     }
 
     [HttpDelete("{id}")]
-    [RoleRequirement(UserRole.Admin)]
     public virtual async Task<ActionResult> DeleteItem(Guid id)
     {
         await _service.DeleteAsync(id);
