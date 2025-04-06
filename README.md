@@ -11,5 +11,4 @@ airport/
 ├── api-airport/          # C# API for managing airports, airplanes, flights and reservations
 ├── databases/            # MSSQL database scripts
 ├── portal/               # React frontend
-├── docker-compose.yml    # Docker environment setup for running all services in containers
 └── README.md             # Project documentation
