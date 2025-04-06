@@ -1,44 +1,6 @@
 version: '3.8'
 
 services:
-  userservice-db:
-    image: postgres:latest
-    container_name: userservice-db
-    environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: userservice
-    volumes:
-      - ./databases/userservice/init.sql:/docker-entrypoint-initdb.d/init.sql
-    ports:
-      - "5432:5432"
-    healthcheck:
-      test: ["CMD", "pg_isready", "-U", "user", "-d", "userservice"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-    networks:
-      - airport-network
-    
-
-  sign-service:
-    build:
-      context: ./sign-service
-    container_name: sign-service
-    environment:
-      DB_CONNECTION_STRING: "postgres://user:password@userservice-db:5432/userservice?sslmode=disable"
-      GRPC_PORT: "50051"
-      HTTP_PORT: "8080"
-      FRONTEND_URL: "http://localhost:3001"
-      JWT_SECRET_KEY: "s3cr3tK3y1234567890abcdefghij12345"
-    depends_on:
-      userservice-db:
-        condition: service_healthy 
-    ports:
-      - "8080:8080"
-    networks:
-      - airport-network
-
   airport-db:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: airport-db
@@ -68,7 +30,9 @@ services:
       echo "Running SQL scripts";
       /opt/mssql-tools18/bin/sqlcmd -C -S airport-db -U sa -P StrongPassword123 -i /airport/delete_database.sql;
       /opt/mssql-tools18/bin/sqlcmd -C -S airport-db -U sa -P StrongPassword123 -i /airport/create_database.sql;
-      /opt/mssql-tools18/bin/sqlcmd -C -S airport-db -U sa -P StrongPassword123 -d Airport -i /airport/create_schema.sql;
+      /opt/mssql-tools18/bin/sqlcmd -C -S airport-db -U sa -P StrongPassword123 -d Airport -i /airport/create_main_schema.sql;
+      /opt/mssql-tools18/bin/sqlcmd -C -S airport-db -U sa -P StrongPassword123 -d Airport -i /airport/create_client_schema.sql;
+      /opt/mssql-tools18/bin/sqlcmd -C -S airport-db -U sa -P StrongPassword123 -d Airport -i /airport/create_users.sql;
       /opt/mssql-tools18/bin/sqlcmd -C -S airport-db -U sa -P StrongPassword123 -d Airport -i /airport/create_airports.sql;
       /opt/mssql-tools18/bin/sqlcmd -C -S airport-db -U sa -P StrongPassword123 -d Airport -i /airport/create_airplanes.sql;
       /opt/mssql-tools18/bin/sqlcmd -C -S airport-db -U sa -P StrongPassword123 -d Airport -i /airport/create_flights.sql;

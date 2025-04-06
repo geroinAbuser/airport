@@ -16,14 +16,14 @@ public class AuthService
         _passwordHasher = passwordHasher;
     }
 
-    public async Task RegisterAsync(string name, string surname, string email, string password)
+    public async Task RegisterAsync(string name, string surname, string email, string password, string role = "User")
     {
         var user = new User
         {
-            Id = Guid.NewGuid(),
             Name = name,
             Surname = surname,
-            Email = email
+            Email = email,
+            Role = role
         };
 
         user.PasswordHash = _passwordHasher.HashPassword(user, password);

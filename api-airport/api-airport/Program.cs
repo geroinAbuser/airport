@@ -5,6 +5,8 @@ using api_airport.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using api_airport.User;
+using api_airport.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -81,6 +83,8 @@ builder.Services.AddRepositories();
 builder.Services.AddServices();
 builder.Services.AddMappers();
 builder.Services.AddControllers();
+builder.Services.AddScoped<ICurrentUser, CurrentUser>();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
@@ -95,6 +99,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseMiddleware<CurrentUserMiddleware>();
 
 app.MapControllers();
 

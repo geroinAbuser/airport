@@ -24,6 +24,7 @@ sqlcmd -S %SERVER% -E -d %DATABASE% -i "%SCRIPTS_DIR%\create_airplanes.sql"
 sqlcmd -S %SERVER% -E -d %DATABASE% -i "%SCRIPTS_DIR%\create_flights.sql"
 sqlcmd -S %SERVER% -E -d %DATABASE% -i "%SCRIPTS_DIR%\create_reservations.sql"
 sqlcmd -S %SERVER% -E -d %DATABASE% -i "%SCRIPTS_DIR%\create_reservation_passengers.sql"
+sqlcmd -S %SERVER% -E -d %DATABASE% -i "%SCRIPTS_DIR%\init.sql"
 
 echo success
 pause
