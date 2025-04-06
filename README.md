@@ -9,8 +9,7 @@ A full-stack flight booking system that allows users to search for flights and m
 ```plaintext
 airport/
 ├── api-airport/          # C# API for managing airports, airplanes, flights and reservations
-├── sign-service/         # Golang authorization service (PostgreSQL)
-├── databases/            # MSSQL and PostgreSQL database scripts
+├── databases/            # MSSQL database scripts
 ├── portal/               # React frontend
 ├── docker-compose.yml    # Docker environment setup for running all services in containers
 └── README.md             # Project documentation
